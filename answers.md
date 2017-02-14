@@ -38,8 +38,8 @@ for (var step = 0; step < 10; step++) {
   $('#right-image img').clone().insertAfter('section').css({'text-align': 'center', 'margin': 'auto','border': '20px solid red', 'float': 'right', 'width': '65%'});
 }
 3.
-<!-- var li = $('<li>', {"class": "bio-info-item"}, 'Last Updated: ', Date());
-$('.bio-info').append(li); -->
+// var li = $('<li>', {"class": "bio-info-item"}, 'Last Updated: ', Date());
+// $('.bio-info').append(li);
 
 var listItem = document.createElement('li');
 var leftSpan = document.createElement('span');
@@ -52,6 +52,6 @@ listItem.appendChild(leftSpan);
 rightSpan.appendChild(lastUpdatedDate);
 listItem.appendChild(rightSpan);
 $(listItem).addClass('bio-info-item');
-$(leftSpan).addClass('bio-info-item');
-$(rightSpan).addClass('bio-info-item');
+// $(leftSpan).addClass('bio-info-item');
+// $(rightSpan).addClass('bio-info-item');
 $(listItem).appendTo('.bio-info');
